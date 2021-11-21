@@ -10,9 +10,20 @@ function qtyChange(event) {
     }
 }
 
-
-
-
+function updateTicketTotal() {
+    let ticketSection = document.getElementsByClassName('ticket')[0][1][2]
+    let total = 0
+    for (let i = 0; i < ticketSection.length; i++) {
+        let ticketSection = ticketSection[i]
+        let ticketPrice = ticketSection.getElementsByClassName('price')[0][1][2]
+        let ticketQty = ticketSection.getElementsByClassName('qty-input')[0][1][2]
+        let price = parseInt(ticketPrice.innerText.replace('kr', ''))
+        let qty = ticketQty.value
+        total += (price * qty)
+    }
+    document.getElementsByClassName('ticket-total')[0].innerText = total + ' kr'
+}
+updateTicketTotal()
 
 
 function checkFreePopcorn(total) {
