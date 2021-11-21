@@ -1,3 +1,17 @@
+let qtyInput = document.getElementsByClassName('qty-input')
+for (let i = 0; i < qtyInput.length; i++) {
+    let input = qtyInput[i]
+    input.addEventListener('change', qtyChange)
+}
+function qtyChange(event) {
+    let input = event.target
+    if (isNaN(input.value) || input.value < 0) {
+        input.value = 0
+    }
+}
+
+
+
 
 
 
