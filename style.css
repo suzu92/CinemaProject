@@ -6,6 +6,11 @@ body {
     padding: 0;
     background: black;
 }
+nav {
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 4em;
+}
 nav a {
     display: inline-block;
     padding: .5em;
@@ -14,10 +19,18 @@ nav a {
 }
 
 .ticket-container {
-
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 85%;
+    background-color: white;
+    border-radius: 20px;
 }
 .movie-img {
-    max-width: 3em;
+    max-width: 1em;
 }
 
 footer {
