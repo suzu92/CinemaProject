@@ -42,6 +42,32 @@ nav a:hover {
     padding: .5em;
     max-width: 3em;
 }
+.minus {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding: .5em;
+    max-width: 3em
+}
+.plus {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding: .5em;
+    max-width: 3em
+}
+.minus:hover {
+    background-color: lightgrey;
+}
+.plus:hover {
+    background-color: lightgrey;
+}
 .order-btn {
     color: white;
     background-color: black;
