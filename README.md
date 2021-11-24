@@ -1,4 +1,4 @@
-#Projektuppgift:
+# Projektuppgift:
 
 Kompletteringsuppgiften går ut på att göra en statisk kundkorg
 som uppdateras. Målet är att göra en enkel hemsida där en kan
