@@ -105,9 +105,9 @@ function checkFreePopcorn(total) {
 document.querySelector('.order-btn').addEventListener('click', checkoutMessage);
 
 function checkoutMessage() {
-    let totalSum = document.getElementById('grandTotal').innerText;
-    if (totalSum === 0) {
-        alert('You have no ordered any tickets yet');
+    let totalOrder = document.getElementById('ticketAmount').value;
+    if (totalOrder <= 0) {
+        alert('You have no ordered tickets yet');
     } else {
         alert('Thank you for your order! Hope you enjoy the movie!');
     }
