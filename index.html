@@ -33,12 +33,15 @@
                 <div class="countBtn">
                     <label>
                         <div class="minus button">-</div>
-                        <input id="q0" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0" oninput="validity.valid||(value='');">
+                        <input id="q0" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0"
+                               oninput="validity.valid||(value='');">
                         <div class="plus button">+</div>
                     </label>
                 </div>
                 <article class="ticket-title">Total:</article>
-                <span class="ticket-total">0 kr</span>
+                <label>
+                    <input id="ticketAmountOrdinary" type="text" value="0" disabled="">
+                </label>
             </section>
             <section class="ticket">
                 <article class="type">Pensioner</article>
@@ -46,12 +49,15 @@
                 <div class="countBtn">
                     <label>
                         <div class="minus button">-</div>
-                        <input id="q1" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0" oninput="validity.valid||(value='');">
+                        <input id="q1" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0"
+                               oninput="validity.valid||(value='');">
                         <div class="plus button">+</div>
                     </label>
                 </div>
                 <article class="ticket-title">Total:</article>
-                <span class="ticket-total">0 kr</span>
+                <label>
+                    <input id="ticketAmountPensioner" type="text" value="0" disabled="">
+                </label>
             </section>
             <section class="ticket">
                 <article class="type">Children</article>
@@ -59,18 +65,21 @@
                 <div class="countBtn">
                     <label>
                         <div class="minus button">-</div>
-                        <input id="q2" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0" oninput="validity.valid||(value='');">
+                        <input id="q2" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0"
+                               oninput="validity.valid||(value='');">
                         <div class="plus button">+</div>
                     </label>
                 </div>
                 <article class="ticket-title">Total:</article>
-                <span class="ticket-total">0 kr</span>
+                <label>
+                    <input id="ticketAmountChildren" type="text" value="0" disabled="">
+                </label>
             </section>
             <section class="check-out">
                 <p class="total-amount">Grand Total:<span id="grandTotal">0</span> kr
                     Tickets Total:
                     <label>
-                    <input id="ticketAmount" type="text" value="0" disabled="">
+                        <input id="ticketAmount" type="text" value="0" disabled="">
                     </label>
                 <p id="free-Pop"></p>
                 <button class="order-btn">Order Now</button>
