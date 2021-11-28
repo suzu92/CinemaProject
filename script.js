@@ -77,6 +77,7 @@ function getTotalCount() {
     document.getElementById('ticketAmountPensioner').value = pricePensioner * amountPensioner
     document.getElementById('ticketAmountChildren').value = priceChildren * amountChildren
 }
+
 //totalen av alla biljettpriser
 function totalAmount() {
     let grandTotal = (amountChildren * priceChildren) + (amountOrdinary * priceOrdinary) + (amountPensioner * pricePensioner)
