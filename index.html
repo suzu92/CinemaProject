@@ -29,7 +29,7 @@
                 <article class="type">Ordinary</article>
                 <span class="price">129 kr</span>
                 <div class="countBtn">
-                    <label>
+                    <label class="label1">
                         <div class="minus button">-</div>
                         <input id="q0" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0"
                                oninput="validity.valid||(value='');">
@@ -45,7 +45,7 @@
                 <article class="type">Pensioner</article>
                 <span class="price">99 kr</span>
                 <div class="countBtn">
-                    <label>
+                    <label class="label1">
                         <div class="minus button">-</div>
                         <input id="q1" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0"
                                oninput="validity.valid||(value='');">
@@ -61,7 +61,7 @@
                 <article class="type">Children</article>
                 <span class="price">99 kr</span>
                 <div class="countBtn">
-                    <label>
+                    <label class="label1">
                         <div class="minus button">-</div>
                         <input id="q2" class="qty-input" type="text" value="0" pattern="\d*" maxlength="2" min="0"
                                oninput="validity.valid||(value='');">
@@ -76,10 +76,12 @@
             <section class="check-out">
                 <p class="total-amount">Grand Total: <span id="grandTotal">0</span> kr
                     Tickets Total:
-                    <label>
+                    <label class="label2">
                         <input id="ticketAmount" type="text" value="0" disabled="">
                     </label>
                 <p id="free-Pop"></p>
+            </section>
+            <section class="checkout-btn">
                 <button class="order-btn">Order Now</button>
             </section>
         </section>

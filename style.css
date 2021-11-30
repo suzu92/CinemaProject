@@ -46,7 +46,11 @@ input {
     align-items: center;
     justify-content: center;
 }
-label {
+.checkout-btn {
+    display: flex;
+    justify-content: right;
+}
+.label1 {
     display: flex;
     align-items: center;
     justify-content: center;
